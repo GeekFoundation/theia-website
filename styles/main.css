@@ -1,0 +1,126 @@
+@font-face { font-family: Tenon; font-weight: 100; font-style: normal; src: url("../fonts/tenon-xlight-2.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 100; font-style: italic; src: url("../fonts/tenon-xlightitalic.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 200; font-style: normal; src: url("../fonts/tenon-light-2.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 200; font-style: italic; src: url("../fonts/tenon-lightitalic.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 300; font-style: normal; src: url("../fonts/tenon-regular-2.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 300; font-style: italic; src: url("../fonts/tenon-regularitalic.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 400; font-style: normal; src: url("../fonts/tenon-medium-2.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 400; font-style: italic; src: url("../fonts/tenon-mediumitalic.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 500; font-style: normal; src: url("../fonts/tenon-bold-2.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 500; font-style: italic; src: url("../fonts/tenon-bolditalic.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 600; font-style: normal; src: url("../fonts/tenon-xbold-2.otf") format("opentype"); }
+@font-face { font-family: Tenon; font-weight: 600; font-style: italic; src: url("../fonts/tenon-xbolditalic.otf") format("opentype"); }
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Tenon;
+  background-image: url('../images/bg.svg');
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  display: inline-block;
+  width: 50%;
+  margin: 20px 0;
+}
+
+p {
+  display: inline-block;
+  width: 50%;
+  margin: 10px 0;
+}
+
+p.note {
+  color: #696b6e;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  color: white;
+}
+
+.block {
+  background-color: #1b1d21;
+  background-image: url('../images/block-bg.svg');
+  background-position: center right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+}
+
+.logo {
+  width: 100px;
+}
+
+a.twitter {
+  background: #f2f2f2;
+  color: black;
+  text-decoration: none;
+  padding: 8px 25px 11px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+a.twitter:hover {
+  background: #cacaca;
+}
+
+@media only screen and (max-width: 720px) {
+h1 {
+  width: 100%;
+}
+
+p {
+  width: 100%;
+}
+.block {
+  background-image: url('../images/block-bg-tablet.svg');
+  background-position: top right;
+  background-size: auto 300px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 250px 40px 40px; 
+}
+}
+
+@media only screen and (max-width: 420px) {
+h1 {
+  width: 100%;
+  font-size: 26px;
+}
+
+p {
+  width: 100%;
+}
+.block {
+  background-image: url('../images/block-bg-tablet.svg');
+  background-position: top right;
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 160px 40px 40px;
+  font-size: 14px;
+}
+}
